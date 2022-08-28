@@ -3,10 +3,9 @@ function showPrimes(limit) {
     var factors = 0;
     var numberOfPrimes = 0;
     var primeList = [];
-    // set i equal to 2 because 2 is the first prime number.
+    // set number equal to 2 because 2 is the first prime number.
     // the first for loop just count up to the desired number
     for (number = 2; number <= limit; number++) {
-
 
         // Iterates through number dividing each time to see if the number is a factor
         for(n=1; n <= number; n++) { // num =2
@@ -26,8 +25,9 @@ function showPrimes(limit) {
             primeList.push(number);
             numberOfPrimes++;
         } 
-        factors=0;
         //
+        //
+        factors=0;
     }
     console.log("Number of primes numbers between 1 and " + limit + " is " + numberOfPrimes);
     return primeList;
